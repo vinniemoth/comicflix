@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --rebecca: #753EA3;
+    --lavender: #B189D2;
+    --liver: #564D4D;
+    --comicNeue:'Comic Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: var(--comicNeue);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+    padding: 15px 30px 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    width: 33vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    width: 33vw;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 33vw;
+}
+
+i {
+    margin: 0 20px;
+}
+
+i:hover {
+    color: #753EA3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--lavender);
+    transition-duration: 500ms;
+}
+
+.active {
+    pointer-events: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+}
+
+.card img {
+    width: 100%;
+}
+
+.content {
+    background-color: #121212;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.768);
+    padding: 20px;
+}
+
+.releasesCards {
+    display: flex;
+    justify-content: center;
+}
+.releasesCards img {
+    /* padding: 20px;  */
+    margin: 10px 10px;
+}
