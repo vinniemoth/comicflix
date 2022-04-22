@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --rebecca: #753EA3;
-    --lavender: #B189D2;
-    --liver: #564D4D;
+    --black: #121212;
+    --white: #fff;
+    --grey: #aaa;
+    --rebecca: #753ea3;
     --comicNeue:'Comic Neue', cursive;
 }
 
@@ -16,14 +15,14 @@
 }
 
 body{
-    background-color: white;
+    background-color: var(--black);
     font-family: var(--comicNeue);
+    color: var(--white);
 }
 
 .navbar {
     display: flex;
     width: 100%;
-    background-color: #121212;
     padding: 15px 30px 15px 30px;
     align-items: center;
     justify-content: space-between;
@@ -39,6 +38,7 @@ body{
 .center {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 33vw;
 }
 
@@ -50,30 +50,89 @@ body{
 
 i {
     margin: 0 20px;
+    cursor: pointer;
 }
 
-i:hover {
-    color: #753EA3;
-}
-
-a {
+.menu {
     text-decoration: none;
-    color: white;
+    color: var(--grey);
 }
 
-a:hover {
-    color: var(--lavender);
+.menu:hover {
+    color: var(--white);
     transition-duration: 500ms;
 }
 
 .active {
     pointer-events: none;
+    color: var(--white);
+    font-size: 15pt;
+}
+
+.principal{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./img/cover.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editora {
+    height: 30px;
+    align-content: center;
+}
+
+.container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+
+.logoDestaque {
+    height: 200px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.info {
+    margin-left: 25px;
+}
+
+.descricao {
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    color: var(--white);
+    padding: 15px;
+    background: var(--rebecca);
+    border: var(--rebecca) solid 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cover{
+    width:400px;
+    padding: 50px;
 }
 
 .card {
     display: flex;
     justify-content: center;
-    background-color: #121212;
 }
 
 .card img {
@@ -81,10 +140,13 @@ a:hover {
 }
 
 .content {
-    background-color: #121212;
     height: 100%;
-    color: rgba(255, 255, 255, 0.768);
+    color: var(--white);
     padding: 20px;
+}
+
+.releases {
+    margin-bottom: 50px;
 }
 
 .releasesCards {
@@ -92,6 +154,6 @@ a:hover {
     justify-content: center;
 }
 .releasesCards img {
-    /* padding: 20px;  */
     margin: 10px 10px;
+    width: 200px;
 }
