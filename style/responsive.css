@@ -1,0 +1,45 @@
+@media screen and (max-width:800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .left {
+        justify-content: center;
+        width: 100%;
+    }
+    .center  {
+        font-size: 25px;
+        padding: 10px;
+        width: 100vw;
+    }
+    .right{
+        justify-content: center;
+        margin: 20px;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+    .active {
+        font-size: 25px;
+    }
+
+    .descricao {
+        font-size:15px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover {
+        display: none;
+    }
+}

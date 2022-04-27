@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+:root {
+    --black: #121212;
+    --white: #fff;
+    --grey: #aaa;
+    --rebecca: #753ea3;
+    --comicNeue:'Comic Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: var(--comicNeue);
+    color: var(--white);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 30px 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    width: 33vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33vw;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 33vw;
+}
+
+i {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.menu {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.menu:hover {
+    color: var(--white);
+    transition-duration: 500ms;
+}
+
+.active {
+    pointer-events: none;
+    color: var(--white);
+    font-size: 15pt;
+}
+
+.principal{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/cover.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    justify-content: space-around;
+}
+
+.editora {
+    height: 30px;
+    align-content: center;
+}
+
+.container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+
+.container .logoDestaque {
+    height: 200px;
+}
+
+.container .details {
+    display: flex;
+    align-items: center;
+}
+
+.details .rating {
+    margin: 2px;
+    padding: 0;
+    cursor: default;
+}
+
+.info {
+    margin-left: 25px;
+}
+
+.descricao {
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    color: var(--white);
+    font-family: var(--comicNeue);
+    font-size: 16px;
+    padding: 15px 30px;
+    margin: 15px;
+    background: rgba(117, 62, 163, 0.6);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.button:hover{
+    color: #753ea3;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button i {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.cover{
+    width:400px;
+    padding: 50px;
+}
+
+.carousel-covers h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.carousel-covers {
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item{
+    width: 100%;
+    display: block;
+}
+
+.item p{
+    text-align: center;
+}
